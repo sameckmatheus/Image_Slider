@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
+    <title>Sport Cras Image Slider</title>
+
+    <!-- CSS Main Files -->
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
 </head>
 <!-- partial:index.partial.html -->
 <body class="loading">
     <header id="header" class="header">
         <div class="burguer">
             <nav class="navbar">
-                <a href="">Models</a>
-                <a href="">About</a>
-                <a href="">Sport Cars</a>
-                <a href="">Contact Us</a>
+                <a href="#">Models</a>
+                <a href="#">About</a>
+                <a href="#">Sport Cars</a>
+                <a href="#">Contact Us</a>
             </nav>
         </div>
     </header> <!-- End Header -->
@@ -48,6 +53,20 @@
     </main> <!-- End Main -->
 
     <!-- Source External Scripts -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40525870-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-40525870-5');
+    </script>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js'></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>

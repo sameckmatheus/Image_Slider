@@ -1,0 +1,139 @@
+/* CSS Hard Reset */
+
+/* Redefine a box model */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove o realce padrão dos links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Define fonte e tamanho padrão */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Remove list-style dos elementos de lista */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove margens padrão de cabeçalhos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Remove estilos de botões padrão */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Remove estilo de input padrão */
+input {
+  border: none;
+  outline: none;
+}
+
+/* Zera bordas e margens de imagens */
+img {
+  border: 0;
+  margin: 0;
+}
+
+/* Limpa estilos de tabelas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+/* Define altura e largura padrão para elementos embutidos */
+video,
+embed,
+object,
+iframe,
+canvas,
+audio {
+  height: auto;
+  width: 100%;
+}
+
+/* Remove estilos padrão de formulários */
+form {
+  outline: none;
+}
+
+/* Limpa estilos padrão de elementos de formulário */
+textarea,
+select {
+  appearance: none;
+  border: none;
+  background: none;
+  resize: none;
+}
+
+/* Zera margem e padding do body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Limpa estilos de elementos semânticos */
+header,
+footer,
+nav,
+article,
+section,
+aside,
+main {
+  display: block;
+}
+
+/* Esconde elementos invisíveis */
+[hidden] {
+  display: none !important;
+}
+
+/* Limpa estilos de campos de formulário inválidos */
+input:invalid,
+textarea:invalid {
+  box-shadow: none;
+}
+
+/* Limpa estilos de campos de formulário válidos */
+input:valid,
+textarea:valid {
+  box-shadow: none;
+}
+
+/* Redefine a cor de fundo e a cor da fonte para todos os elementos */
+body {
+  background-color: white;
+  color: black;
+}

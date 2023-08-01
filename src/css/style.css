@@ -375,10 +375,10 @@ main {
 #slider-content h2 {
     font-family: "acta-display", serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 100px;
     letter-spacing: -1px;
-    color: white;
-    line-height: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 100px;
     margin: 20px 0 60px;
 }
 

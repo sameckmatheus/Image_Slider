@@ -11,38 +11,40 @@
     <link rel="stylesheet" href="src/css/style.css">
 
 </head>
+<body>
 <!-- partial:index.partial.html -->
 <body class="loading">
     <header id="header" class="header">
-        <div class="burguer">
-            <nav class="navbar">
-                <a href="#">Models</a>
-                <a href="#">About</a>
+        <div class="inner">
+            <div class="burger"></div>
+            <nav>
+                <a class="active" href="#">Models</a>
                 <a href="#">Sport Cars</a>
-                <a href="#">Contact Us</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
             </nav>
         </div>
     </header> <!-- End Header -->
 
     <main id="main">
-        <div class="slider">
+        <div id="slider">
             <div class="slider-inner">
-                <div class="slider-content">
+                <div id="slider-content">
                     <div class="meta">Model</div>
-                    <h2 class="slider-title">Ferrari F8 <br>Tributo</h2>
+                    <h2 id="slide-title">Ferrari F8 <br>Tributo</h2>
 
-                    <span data-slider-title="0">Ferrari <br> F8 Tributo</span>
-                    <span data-slider-title="1">Koenigsegg <br>Agera R</span>
-                    <span data-slider-title="2">Bugatti <br>Mistral</span>
-                    <span data-slider-title="3">Lamborghini <br>Centenario</span>
+                    <span data-slide-title="0">Ferrari <br> F8 Tributo</span>
+                    <span data-slide-title="1">Koenigsegg <br>Agera R</span>
+                    <span data-slide-title="2">Bugatti <br>Mistral</span>
+                    <span data-slide-title="3">Lamborghini <br>Centenario</span>
 
                     <div class="meta">Specs</div>
-                    <div class="slider-status">3.9 V8 Motor - 720hp</div>
+                    <div id="slide-status">3.9 V8 Motor - 720hp</div>
 
-                    <span data-slider-status="0">3.9 V8 Motor - 720 hp</span>
-                    <span data-slider-status="1">V8 Motor - 1115 hp</span>
-                    <span data-slider-status="2">W16 Motor - 1580 hp</span>
-                    <span data-slider-status="3">6.5 V12 Motor - 780 hp</span>
+                    <span data-slide-status="0">3.9 V8 Motor - 720 hp</span>
+                    <span data-slide-status="1">V8 Motor - 1115 hp</span>
+                    <span data-slide-status="2">W16 Motor - 1580 hp</span>
+                    <span data-slide-status="3">6.5 V12 Motor - 780 hp</span>
                 </div>
             </div>
 
@@ -53,11 +55,11 @@
             <img src="src/img/centenatio.jpg" alt="">
 
             <!-- Change Dot Pagination -->
-            <div id="dot-pagination" class="dot-pagination">
-                <button class="active" data-slider-status="0"></button>
-                <button data-slider-status="1"></button>
-                <button data-slider-status="2"></button>
-                <button data-slider-status="3"></button>
+            <div id="pagination" class="pagination">
+                <button class="active" data-slide="0"></button>
+                <button data-slide="1"></button>
+                <button data-slide="2"></button>
+                <button data-slide="3"></button>
             </div>
         </div>
     </main> <!-- End Main -->
@@ -65,14 +67,14 @@
     <!-- Source External Scripts -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40525870-5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-        gtag('config', 'UA-40525870-5');
-    </script>
-
+            gtag('config', 'UA-40525870-5');
+        </script>
+    </body>
     <!-- Partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js'></script>

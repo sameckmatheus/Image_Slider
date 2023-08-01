@@ -8,7 +8,6 @@ const SliderControl =  function (opts) {
     `;
 
     let fragment = `
-        
         varying vec2 vUv;
 
         uniform sampler2D currentImage;
@@ -33,11 +32,23 @@ const SliderControl =  function (opts) {
             vec4 finalTexture = mix(_currentImage, _nextImage, dispFactor);
 
             gl_FragColor = finalTexture;
-
         }
     `;
 
-    
+    let images = opts.images, image, sliderImages = [];;
+    let canvasWidth = images[0].clientWidth;
+    let canvasHeight = images[0].clientHeight;
+    let parent = opts.parent;
+    let renderWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    let renderHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+    let renderW, renderH;
+
+    if (renderWidth < canvasWidth) {
+        renderW = renderWidth;
+    } else {
+        renderW = canvasWidth;
+    }
 };
 
 initializeSlider (document.querySelectorAll('img'), () => {

@@ -49,6 +49,21 @@ const SliderControl =  function (opts) {
     } else {
         renderW = canvasWidth;
     }
+
+    renderH = canvasHeight;
+
+    let renderer = new THREE.WebGLRenderer({
+        antialias: false,
+    });
+
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setClearColor( 0x23272A, 1.0 );
+    renderer.setSize( renderW, renderH );
+    parent.appendChild( renderer.domElement );
+
+
+    
+
 };
 
 initializeSlider (document.querySelectorAll('img'), () => {

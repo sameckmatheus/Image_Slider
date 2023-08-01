@@ -62,8 +62,19 @@ const SliderControl =  function (opts) {
     parent.appendChild( renderer.domElement );
 
 
-    
 
+    addEvents();
+
+    window.addEventListener( 'resize' , function(e) {
+        renderer.setSize(renderW, renderH);
+    });
+
+    let animate = function() {
+        requestAnimationFrame(animate);
+
+        renderer.render(scene, camera);
+    };
+    animate();
 };
 
 initializeSlider (document.querySelectorAll('img'), () => {
